@@ -1,215 +1,33 @@
-@font-face {
-  font-family: norse-bold;
-  src: url(./fonts/Norse-Bold.otf);
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-.left {
-  background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
-  background-size: cover;
-  height: 100%;
-  width: 33.5%;
-  display: flex;
-  flex-direction: column;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
-.right {
-  background-color: red;
-  height: 100%;
-  width: 66.5%;
-  display: flex;
-  flex-direction: column;
+input, button, textarea, select {
+  font: inherit;
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  width: 100%;
-
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
-.middle {
-  display: flex;
-  flex-direction: column;
-  height: 40%;
-  width: 100%
-  
+#root, #__next {
+  isolation: isolate;
 }
 
-.bottom {
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  width: 100%;
-}
-
-/*LEFT*/
-.top div {
-  height: 55%;
-  width: 100%;
-  background-color: transparent;
-}
-
-.top .grey-box {
-  height: 45%;
-  width: 100%;
-  background-color: rgba(0,0,0,.5);
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-
-.top .grey-box .image img {
-  height: auto;
-  width: 50%;
-  object-fit: contain;
-  justify-content: flex-end;
-}
-
-.top .grey-box div {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.top .grey-box div h1 {
-  padding-top: 2vh;
-  font-family: norse-bold;
-  color: white;
-  font-size: 10vh;
-}
-
-/*RIGHT*/
-.right .top {
-  background-color: rgb(245, 245, 245);
-  overflow: auto;
-  padding-left: 25px;
-  padding-top: 90px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.right .top h2 {
-  font-size: 16px;
-  width: 75%;
-}
-
-.right .top .second {
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-
-.right .top span {
-  font-style: italic;
-}
-
-.right .middle {
-  background-color: white;
-  overflow: auto;
-  padding-left: 25px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 15px;
-}
-
-.right .middle h2 {
-  font-size: 18px;
-}
-
-form {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.formRow {
-  display: flex;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  justify-content: flex-start;
-  flex: 1 1 100%;
-}
-
-.form-element {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.form-element label {
-  font-weight: bold;
-  font-size: 10px;
-  color: rgb(77, 77, 77);
-}
-
-input {
-  width: 75%;
-  padding: 2px;
-  border-radius: 5px;
-  border: solid 1px rgb(220, 220, 220);
-}
-
-.form-element input:focus {
-  outline: none;
-  border: 1px solid blue;
-  box-shadow: .5px .5px 5px grey;
-}
-
-.error {
-  outline: none;
-  border: 1px solid red;
-  box-shadow: .5px .5px 5px grey;
-}
-
-.errorMessage {
-  color: #cc0033;
-  font-size: 12px;
-  margin: 5px 0 0;
-  display: none;
-}
-
-.right .bottom {
-  background-color: rgb(245, 245, 245);
-  overflow: auto;
-  padding-left: 25px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 24px;
-  box-shadow: 2px 2px 7px grey;
-}
-
-button {
-  background-color: #596D48;
-  color: white;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  padding: 8px 36px;
-  margin-bottom: 24px;
-  box-shadow: 2px 2px 5px grey;
-}
-
-.right h3 {
-  font-size: 16px;
-}
-
-a {
-  color: #596D48;
+h1 {
+  color: blue;
 }
